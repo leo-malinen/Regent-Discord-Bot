@@ -33,7 +33,7 @@ client.on("messageCreate", (message) => {
   if (message.mentions.has(client.user)) {
     if (message.content.includes("who are you?")) {
       message.channel.send(
-        "I am the Sultan! My caliphate, bathed in opulence, weaves intricate silks coveted by distant lands, while gem-studded treasures flow like rivers through his markets. Under my rule, caravans traverse deserts, laden with riches, as merchants from all around seek my favor and fortune.",
+        "I am [Create botname here]. This description should be changed to whatever you like and should seem like either a boast or something this regent would say about him or herself.",
       );
     }
   }
@@ -124,11 +124,11 @@ client.on("messageCreate", async (message) => {
             );
             resources[tradedResource] -= tradeAmount;
           } else {
-            let woodAmount = Math.floor(resources["Wood"] / 5);
+            let woodAmount = Math.floor(resources["Lumber"] / 5);
             await channel.send(
               `I wish to trade ${woodAmount} lumber to you.`,
             );
-            resources["Wood"] -= woodAmount;
+            resources["Lumber"] -= woodAmount;
           }
         } else {
           let randomEvent = events[Math.floor(Math.random() * events.length)];
