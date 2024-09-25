@@ -90,10 +90,10 @@ client.on("messageCreate", async (message) => {
       let otherBot = bots[Math.floor(Math.random() * bots.length)];
       let action = Math.floor(Math.random() * 100);
       towns.forEach((town) => {
-        resources["String"] += 10;
-        resources["Jewels and Gems"] += 10;
+        resources["Lumber"] += 10;
+        resources["Metal"] += 10;
         resources["Food"] -= 10;
-        resources["Wood"] += 20;
+        resources["Stone"] += 20;
       });
       if (morale < 25) {
         if (action < 50) {
