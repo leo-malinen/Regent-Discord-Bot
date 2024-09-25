@@ -6,39 +6,27 @@ app.listen(3000, () => {
 });
 
 app.get("/", (req, res) => {
-  res.send("I'm up!");
+  res.send("I am up!");
 });
 
 const Discord = require("discord.js");
 let client = new Discord.Client({
   intents: ["Guilds", "GuildMessages", "MessageContent"],
 });
-let bots = ["King Demetrius var Ruthern", "Jarl Aesbiorn Gullisson"];
+let bots = ["Other Bot 1", "Other Bot 2", "Other Bot 3"];
 let events = [
-  "Palace Celebration",
-  "Cultural festival",
-  "Army parade",
-  "Holiday celebration",
-  "Literary gathering",
-  "Trade fair",
-  "Diplomatic summmit",
+  "Event 1",
+  "Event 2",
+  "Event 3",
+  "Event 4",
+  "Event 5",
 ];
 let appointees = [
-  "Janissary",
-  "Imam",
-  "Shiekh",
-  "Pasha",
-  "Vizier",
-  "Sadr-i Azam",
-  "Defterdar",
-  "Kazasker",
-  "Tresurer",
-  "Sahib-i Divan",
-  "Kadi",
-  "Mütesellim",
-  "Agas",
-  "Emir",
-  "Mufti",
+  "Appointee 1",
+  "Appointee 2",
+  "Appointee 3",
+  "Appointee 4",
+  "Appointee 5",
 ];
 
 client.on("messageCreate", (message) => {
@@ -56,31 +44,14 @@ let towns = ["Town1", "Town2", "Town3", "Town4", "Town5"];
 let troops = {
   Infantry: 200,
   Archers: 100,
-  "Camel Riders": 50,
+  Cavalry: 50,
 };
 let resources = {
   Food: 1024,
-  Wood: 512,
-  Alcohol: 0,
-  Amethyst: 0,
-  Diamond: 0,
-  Emerald: 0,
-  Livestock: 0,
-  Iron: 0,
-  Seafood: 0,
-  Quartz: 0,
-  String: 0,
-  "Jewels and Gems": 0,
-  Coal: 0,
-  Enderpearls: 0,
-  "Blaze Rod": 0,
-  "Nether Wart": 0,
+  Lumber: 512,
   Stone: 0,
-  Diamond: 0,
-  Copper: 0,
-  Lapis: 0,
-  Gold: 0,
-  Netherite: 0,
+  Metal: 0,
+  Livestock: 0,
 };
 
 client.on("messageCreate", async (message) => {
