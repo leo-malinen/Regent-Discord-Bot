@@ -33,7 +33,7 @@ client.on("messageCreate", (message) => {
   if (message.mentions.has(client.user)) {
     if (message.content.includes("who are you?")) {
       message.channel.send(
-        "I am [Create botname here]. This description should be changed to whatever you like and should seem like either a boast or something this regent would say about him or herself.",
+        "I am [botname here]. This description should be changed to whatever you like and should seem like either a boast or something this regent would say about him or herself.",
       );
     }
   }
@@ -58,7 +58,7 @@ client.on("messageCreate", async (message) => {
   if (message.mentions.has(client.user)) {
     let channel = client.channels.cache.find(channel => channel.name === "royal-kingdom-declarations");
     if (!channel) {
-      console.log('The channel "royal-kingdom-declarations" does not exist!');
+      console.log('The channel "channel-name" does not exist!');
       return;
     }
 
