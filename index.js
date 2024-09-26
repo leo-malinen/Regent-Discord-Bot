@@ -154,7 +154,7 @@ client.on("messageCreate", async (message) => {
       }
       morale = Math.max(0, Math.min(morale, 100));
     } else if (message.content.includes("declare war")) {
-      await channel.send(`So be it, the caliphate will meet you with their blades and bows!`);
+      await channel.send(`So be it, I shall meet you with my blades and my bows!`);
     }
   }
 });
