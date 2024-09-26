@@ -47,8 +47,8 @@ let troops = {
   Cavalry: 50,
 };
 let resources = {
-  Food: 1024,
-  Lumber: 512,
+  Food: 0,
+  Lumber: 0,
   Stone: 0,
   Metal: 0,
   Livestock: 0,
